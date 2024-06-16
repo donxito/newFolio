@@ -3,3 +3,45 @@
 @tailwind utilities;
 
 
+/*    ABA DIREITA   */
+
+.socialIcon-linkedin{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: -80px;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 60px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: -webkit-linear-gradient(-45deg, #fbfcdb 0%, #e9defa 100%);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+ }
+  
+  .socialIcon-linkedin:hover {
+    left: 0; /* Expand on hover */
+  }
+  
+  .socialIconLink {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #abaaaa;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-right: 20px;
+    gap: 20px;
+  }
+  .socialIconLink p {
+    color: #abaaaa;
+  }
+  @media (max-width: 576px) {
+    .socialIcon-linkedin {
+      display: none;
+    }
+  }
