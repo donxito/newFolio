@@ -1,25 +1,33 @@
 "use client";
 
 import Hero from "../components/hero";
+import Divider from "@/components/divider";
+import About from "@/components/about";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export default function Home() {
+  
   // timer for showing up "aba"
   useEffect(() => {
     const timer = setTimeout(() => {
-      const socialIcon = document.querySelector(".socialIcon-linkedin");
-      if (socialIcon) {
-        (socialIcon as HTMLElement).style.display = "block"; // Cast socialIcon to an HTML element
+      const socialIconLink = document.querySelector(".socialIcon-linkedin");
+      const socialIconGitHub = document.querySelector(".socialIcon-github");
+      if (socialIconLink && socialIconGitHub) {
+        (socialIconLink as HTMLElement).style.opacity = "1";
+        (socialIconLink as HTMLElement).style.pointerEvents = "auto"; // Enable interaction
+        (socialIconGitHub as HTMLElement).style.opacity = "1";
+        (socialIconGitHub as HTMLElement).style.pointerEvents = "auto"; // Enable interaction
       }
-    }, 2000); // 2 seconds delay
+    }, 5000); // 5 seconds delay
 
     return () => clearTimeout(timer); // Cleanup the timer on component unmount
   }, []);
 
   return (
     <>
+    
       <aside className="socialIcon-linkedin">
         <a
           href="https://www.linkedin.com/in/miguelchito-reactdeveloper"
@@ -32,9 +40,27 @@ export default function Home() {
         </a>
       </aside>
 
+      <aside className="socialIcon-github">
+        <a
+          href="https://github.com/donxito"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="socialIconLink"
+        >
+           <FaGithub className="text-3xl" />
+          <p>GitHub</p>
+         
+        </a>
+      </aside>
+
+
       <main className="flex flex-col items-center px-4">
         <Hero />
+        <Divider />
+        <About />
       </main>
+
+
     </>
   );
 }

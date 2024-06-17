@@ -3,31 +3,65 @@
 @tailwind utilities;
 
 
-/*    ABA DIREITA   */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-.socialIcon-linkedin{
-    display: none;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: transparent;
+    box-sizing: border-box;
+    font-family: "Outfit", "Sarabun", sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------------------------------------- */
+
+/*    ABA   */
+
+.socialIcon-linkedin,
+.socialIcon-github {
     position: fixed;
     top: 50%;
-    left: -80px;
     transform: translateY(-50%);
     width: 150px;
     height: 60px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background: -webkit-linear-gradient(-45deg, #fbfcdb 0%, #e9defa 100%);
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease, opacity 1s ease;
     z-index: 10;
- }
-  
-  .socialIcon-linkedin:hover {
+    opacity: 0;
+    pointer-events: none; /* Prevent interaction until fully visible */
+}
+
+.socialIcon-linkedin {
+    left: -80px;
+    background: -webkit-linear-gradient(-45deg, #fbfcdb 0%, #e9defa 100%);
+}
+
+.socialIcon-github {
+    top: 60%;
+    right: -80px;
+    background: -webkit-linear-gradient(45deg, #fbfcdb 0%, #e9defa 100%);/* Opposite gradient */
+}
+
+.socialIcon-linkedin:hover {
     left: 0; /* Expand on hover */
-  }
-  
-  .socialIconLink {
+}
+
+.socialIcon-github:hover {
+    right: 0;
+}
+
+.socialIconLink {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -36,12 +70,70 @@
     font-size: 1rem;
     padding-right: 20px;
     gap: 20px;
-  }
-  .socialIconLink p {
+}
+
+.socialIconLink p {
     color: #abaaaa;
-  }
-  @media (max-width: 576px) {
-    .socialIcon-linkedin {
-      display: none;
+}
+
+@media (max-width: 576px) {
+    .socialIcon-linkedin,
+    .socialIcon-github {
+        display: none;
     }
+}
+
+
+
+
+  /*    DIVIDER  */
+
+  /* Glowing Effect CSS */
+
+  /*
+
+.glow {
+  position: relative;
+  z-index: 1;
+}
+
+.glow:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(185, 194, 247, 0.6);
+  filter: blur(8px);
+  z-index: -1;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    opacity: 0.5;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+*/
+
+
+  /*  GLOW COLOR TEXT  */
+
+.aboutText {
+  cursor: none;
+}
+
+
+h1 {
+  cursor: none;
+}
+
+
+
+
+  /*  ******  */
