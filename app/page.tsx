@@ -3,13 +3,16 @@
 import Hero from "../components/hero";
 import Divider from "@/components/divider";
 import About from "@/components/about";
+import ConfettiComponent from "@/components/confettiComponent";
+import Projects from "@/components/projects";
+
 
 import { useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
+
 export default function Home() {
-  
-  // timer for showing up "aba"
+  // timer for showing up "aba" social icons
   useEffect(() => {
     const timer = setTimeout(() => {
       const socialIconLink = document.querySelector(".socialIcon-linkedin");
@@ -27,7 +30,6 @@ export default function Home() {
 
   return (
     <>
-    
       <aside className="socialIcon-linkedin">
         <a
           href="https://www.linkedin.com/in/miguelchito-reactdeveloper"
@@ -47,20 +49,20 @@ export default function Home() {
           rel="noopener noreferrer"
           className="socialIconLink"
         >
-           <FaGithub className="text-3xl" />
+          <FaGithub className="text-3xl" />
           <p>GitHub</p>
-         
         </a>
       </aside>
-
 
       <main className="flex flex-col items-center px-4">
         <Hero />
         <Divider />
         <About />
+        <Projects />
+
+        <ConfettiComponent />
+
       </main>
-
-
     </>
   );
 }

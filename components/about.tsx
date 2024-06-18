@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { GlowCapture, Glow } from "@codaworks/react-glow";
 import SectionHeading from "./sectionHeading";
@@ -5,43 +6,72 @@ import { motion } from "framer-motion";
 
 function About() {
   return (
-    <motion.section className="aboutText mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
-    initial={{ opacity: 0, y: 100 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.2 }}
+    <motion.section
+      className="aboutText mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2 }}
     >
       <GlowCapture>
         <Glow color="yellow">
-          <SectionHeading>
-            About me
-          </SectionHeading>
+          <SectionHeading>About me</SectionHeading>
 
-          <p className="mb-3 text-black glow:text-glow/70 ">
-            As a passionate introvert, I thrive on{" "}
-            <span className="font-medium">building things with code.</span> My
-            background in<span className="underline"> Graphic Design</span> has
-            given me a unique perspective, and my culinary adventures as a{" "}
-            <span className="italic">Chef</span> across Southeast Asia have
-            honed my{" "}
-            <span className=" font-semibold">
-              problem-solving skills and adaptability.
+          <p className="mb-3 text-black glow:text-glow/70 "><span className="text-xl">Hi there!</span><br/>
+          With <span className="font-semibold"> 10 years of experience in Graphic Design
+            </span>{" "}
+            and a background as a
+            <span className="italic"> Chef in Southeast Asia</span>. My journey
+            has been anything but ordinary, shaping me into a developer with a
+            talent for
+            <span className="underline"> creative problem-solving</span> and
+            <span className="font-semibold"> adaptive innovation</span>.
+            </p>
+
+          <p className="mb-3 mt-8 text-black glow:text-glow/70">
+            <span className="font-semibold">What I Bring to the Table:</span>
+          </p>
+          <ul className="mb-3 text-black glow:text-glow/70 list-disc list-inside">
+            <li>
+              <span className="font-semibold">Problem-Solving Prowess:</span>{" "}
+              Sharpened by a spectrum of professional challenges.
+            </li>
+            <li>
+              <span className="font-semibold">
+                Adaptability and Quick Learning:
+              </span>{" "}
+              A constant in my ever-changing career landscape.
+            </li>
+          </ul>
+
+          <p className="mb-3 mt-8 text-black glow:text-glow/70">
+            <span className="font-semibold">
+              Specializing in Full-Stack Development with the MERN Stack:
             </span>
           </p>
+          <ul className="mb-3 text-black glow:text-glow/70 list-disc list-inside">
+            <li>
+              <span className="font-semibold">Frontend technologies:</span>{" "}
+              JavaScript (ES6), React, HTML, CSS, SaSS, Bootstrap, Tailwind
+            </li>
+            <li>
+              <span className="font-semibold">Backend technologies:</span>{" "}
+              Express, Node.js, MongoDB, REST APIs, Mongoose
+            </li>
+            <li>
+              <span className="font-semibold">Version control:</span> GitHub &
+              Git
+            </li>
+          </ul>
 
-          <p className="mb-3  text-black glow:text-glow/70">
-            Now, as a<span className="font-bold"> Full Stack Developer </span>
-            proficient in the<span className="font-semibold"> MERN </span>stack
-            and <span className="underline">REST APIs</span>, I create dynamic
-            and intuitive web applications.{" "}
+          <p className="mb-3 text-black glow:text-glow/70">
+            <span className="font-semibold">Expanding Horizons: </span>
+            Currently leveling up with TypeScript and Next.js.
           </p>
 
-          <p className="mb-3  text-black glow:text-glow/70">
-            My focus on{" "}
-            <span className="italic">user experience and interface design</span>{" "}
-            drives me to continuously learn and grow. <br />
-            <span className="overline font-semibold">
-              Let’s connect and build something amazing together!
-            </span>
+          <p className="mb-3 text-black glow:text-glow/70">
+            Passionate about development and driven to excel, I’m on the lookout
+            for a team where
+            <span className="underline"> innovation meets impact</span>.
           </p>
         </Glow>
       </GlowCapture>

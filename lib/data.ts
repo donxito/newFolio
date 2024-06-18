@@ -2,6 +2,12 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import imgFounderFinder from "../public/founderfinder4.png"
+import imgTravelTips from "../public/traveltips1.png"
+import imgBookClub from "../public/bookclub3.png"
+import imgEventSlap from "../public/eventslap1.png"
+import imgPaperboy from "../public/paperboy2.png"
+
 
 
 export const links = [
@@ -52,7 +58,8 @@ export const projectsData = [
     skills: ["React", "ExpressJS", "MongoDB", "Mongoose", "NodeJS", "Tailwind", "REST API", "TypeScript"],
     image:"https://res.cloudinary.com/dq08sfqpa/image/upload/v1717886816/event-slap/gab3asumgl9kvdz1xk7k.png",
     demo: "https://founder-finder.vercel.app",
-    repo: "https://github.com/donxito/founder-finder-client"
+    repo: "https://github.com/donxito/founder-finder-client",
+    imgUrl: imgFounderFinder
 },
 
 {
@@ -63,18 +70,20 @@ export const projectsData = [
     skills: ["React", "ExpressJS", "MongoDB", "Mongoose", "NodeJS", "Tailwind", "REST API"],
     image:"https://res.cloudinary.com/dq08sfqpa/image/upload/v1713993138/event-slap/clud2onbzf4gdvsikeei.png",
     demo: "https://minibookclub.netlify.app",
-    repo: "https://github.com/donxito/frontend-booknotes"
+    repo: "https://github.com/donxito/frontend-booknotes",
+    imgUrl: imgBookClub
 },
 
 {
     id: 3,
     title: "EventSlap",
-    description: "Full-stack application using the MERN stack, SPA frontend, built with React, consisting of multiple views and implementing all CRUD actions. The backend is a REST API built with ExpressJS, MongoDB, and Mongoose.",
+    description: "Full-stack application implementing all CRUD actions, using the MERN stack. Backend REST API built with Express, MongoDB, and Mongoose.",
     summary: "It allows logged-in users to manage all the events and venues that they own in the database doing full CRUD. Anonymous users can see venues, events and free events, and also doing search by name or date. Logged-in users can create new venues and events, and view all existing ones.",
     skills: ["React", "ExpressJS", "MongoDB", "Mongoose", "NodeJS", "Tailwind", "REST API"],
     image:"https://res.cloudinary.com/dq08sfqpa/image/upload/v1712179049/event-slap/fxgzmyxmv44pjefvmjjx.png",
     demo: "https://eventslap.netlify.app",
-    repo: "https://github.com/mig-max/eventManager-frontend"
+    repo: "https://github.com/mig-max/eventManager-frontend",
+    imgUrl: imgEventSlap
 },
 
 {
@@ -85,7 +94,8 @@ export const projectsData = [
     skills: ["React", "React-Router", "Axios", "Tailwind"],
     image:"https://res.cloudinary.com/dq08sfqpa/image/upload/v1712179182/event-slap/qjsh8yzo6mvoxyc78a3j.png",
     demo: "https://toptraveltips.netlify.app",
-    repo: "https://github.com/mig-max/travel-tips"
+    repo: "https://github.com/mig-max/travel-tips",
+    imgUrl: imgTravelTips
 },
 
 {
@@ -96,7 +106,8 @@ export const projectsData = [
     skills: ["HTML", "CSS", "JavaScript", "Object-Oriented Programming (OOP)", "DOM Manipulation"],
     image:"https://res.cloudinary.com/dq08sfqpa/image/upload/v1712179253/event-slap/y92vc5af7e4wkk5v3qxz.png",
     demo: "https://donxito.github.io/game_paperboy",
-    repo: "https://github.com/donxito/game_paperboy"
+    repo: "https://github.com/donxito/game_paperboy",
+    imgUrl: imgPaperboy
 }
 ] as const;
 
