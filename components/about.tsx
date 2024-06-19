@@ -1,12 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import React, { useEffect } from "react";
 import { GlowCapture, Glow } from "@codaworks/react-glow";
 import SectionHeading from "./sectionHeading";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/activeSectionContext"
 
 function About() {
+
+  const [ref, inView] = useInView({
+    threshold: 0.75,
+  });
+
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("About")
+    } 
+
+  }, [inView, setActiveSection])
+
+  
+
+
+
   return (
     <motion.section
+      ref={ref}
       className="aboutText mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}

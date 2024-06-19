@@ -1,13 +1,16 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
+
 import Link from "next/link";
 import clsx from "clsx";
+import { useActiveSectionContext } from "@/context/activeSectionContext";
 
 function Header() {
-  const [activeSection, setActiveSection] = useState("Home");
+
+  const { activeSection, setActiveSection } = useActiveSectionContext()
 
 
   return (
