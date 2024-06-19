@@ -53,7 +53,7 @@ export const projectsData = [
   {
     id: 1,
     title: "FounderFinder",
-    description: "Founder Finder is a web application where users can search for potential co-founders.",
+    description: "Founder Finder is a Fullstack web application where users can search for potential co-founders based on various criteria. Profile Management and user Authentication",
     summary: "Finding a co-founder is hard, we provide you with the platform to make that easier. Building a start-up is hard work. It is a journey to create something new and it takes believing in a dream each and every day, often against all odds.",
     skills: ["React", "ExpressJS", "MongoDB", "Mongoose", "NodeJS", "Tailwind", "REST API", "TypeScript"],
     image:"https://res.cloudinary.com/dq08sfqpa/image/upload/v1717886816/event-slap/gab3asumgl9kvdz1xk7k.png",

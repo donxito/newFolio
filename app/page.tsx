@@ -5,6 +5,7 @@ import Divider from "@/components/divider";
 import About from "@/components/about";
 import ConfettiComponent from "@/components/confettiComponent";
 import Projects from "@/components/projects";
+import Footer from "@/components/footer";
 
 
 import { useEffect } from "react";
@@ -59,7 +60,8 @@ export default function Home() {
         <Divider />
         <About />
         <Projects />
-
+      
+        <Footer />
         <ConfettiComponent />
 
       </main>

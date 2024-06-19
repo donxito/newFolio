@@ -23,7 +23,7 @@ function ConfettiComponent() {
         x={0.5}
         y={1}
         launchSpeed={3}
-        colors={["#FF00CC", "#FF6600", "#00FF00", "#FFFF00"]}
+        colors={["#00FFFF", "#FF6600", "#00FF00", "#FFFF00"]}
       />
     </div>
   );
