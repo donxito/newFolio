@@ -2,7 +2,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import foto from "@/public/foto.png";
 //import cv from "@/public/Miguel_Chito_CV";
 import { motion } from "framer-motion";
@@ -11,42 +11,27 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { GlowCapture, Glow } from "@codaworks/react-glow";
-import { useInView } from "react-intersection-observer";
-import { useActiveSectionContext } from "@/context/activeSectionContext";
+import { useSectionInView } from "@/lib/hooks";
 
 function Hero() {
 
-  const { ref, inView} = useInView({
-    threshold: 0.5,
-  });
-
-  const { setActiveSection } = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView) {
-      setActiveSection("Home");
-    } 
-
-  },[inView, setActiveSection])
+   const { ref } = useSectionInView("Home", 0.5)
 
   // date & greeting
+  let greeting = "";
+  const date = new Date();
+  let currentHour = date.getHours();
+  //console.log(currentHour)
 
-let greeting = "";
-const date = new Date();
-let currentHour = date.getHours();
-
-//console.log(currentHour)
-
-if (currentHour >= 0 || currentHour < 6) {
-  greeting = "Good night";
-} else if (currentHour >= 6 || currentHour < 12) {
-  greeting = "Good morning"
-} else if (currentHour >= 12 || currentHour < 19) {
-  greeting = "Good afternoon"
-} else if (currentHour >= 19 || currentHour < 0) {
-  greeting = "Good evening"
-}
-
+  if (currentHour < 6) {
+    greeting = "Good night";
+  } else if (currentHour < 12) {
+    greeting = "Good morning";
+  } else if (currentHour < 19) {
+    greeting = "Good afternoon";
+  } else {
+    greeting = "Good evening";
+  }
 
   return (
     <section
