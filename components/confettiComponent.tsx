@@ -1,6 +1,7 @@
 import React from "react";
 import Confetti from "react-confetti-boom";
-function ConfettiComponent() {
+
+export function ConfettiComponentBottom() {
   return (
     <div
       style={{
@@ -29,4 +30,28 @@ function ConfettiComponent() {
   );
 }
 
-export default ConfettiComponent;
+export function ConfettiComponentTop() {
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: "0px",
+        left: "50%",
+        transform: "translateX(-50%)",
+        zIndex: "0",
+        width: "100%",
+      }}
+    >
+      <Confetti
+        mode="fall"
+        particleCount={100}
+        shapeSize={10}
+        colors={["#FF0000", "#FF6600", "#00FF00", "#FF00FF"]}
+      />
+    </div>
+  );
+}
+
+
+
+

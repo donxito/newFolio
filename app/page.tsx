@@ -3,13 +3,15 @@
 import Hero from "../components/hero";
 import Divider from "@/components/divider";
 import About from "@/components/about";
-import ConfettiComponent from "@/components/confettiComponent";
+import {ConfettiComponentBottom, ConfettiComponentTop} from "@/components/confettiComponent";
 import Projects from "@/components/projects";
 import Footer from "@/components/footer";
 
 
 import { useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import Skills from "@/components/skills";
+import Experience from "@/components/experience";
 
 
 export default function Home() {
@@ -56,14 +58,18 @@ export default function Home() {
       </aside>
 
       <main className="flex flex-col items-center px-4">
+
+      <ConfettiComponentTop />
         <Hero />
         <Divider />
         <About />
         <Projects />
+        <Skills />
+        <Experience />
       
         <Footer />
-        <ConfettiComponent />
-
+        <ConfettiComponentBottom />
+        
       </main>
     </>
   );
