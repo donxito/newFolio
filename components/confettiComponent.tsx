@@ -6,7 +6,7 @@ export function ConfettiComponentBottom() {
     <div
       style={{
         position: "absolute",
-        bottom: "100px",
+        bottom: "-30px",
         left: "50%",
         transform: "translateX(-50%)",
         zIndex: "0",
