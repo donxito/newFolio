@@ -11,33 +11,35 @@ import { useSectionInView } from "@/lib/hooks";
 import { experiencesData } from "@/lib/data";
 
 function Experience() {
-  
-  const { ref } = useSectionInView("Experience", 0.5);
+  const { ref } = useSectionInView("Experience", 0.75);
 
   //console.log(experiencesData);
 
   return (
-        <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section 
+      id="experience" 
+      ref={ref} 
+      className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="" animate={true}>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-            visible={true}
+              visible={true}
               contentStyle={{
-                background:" #f3f4f6",
+                background: " #f3f4f6",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
               contentArrowStyle={{
-                borderRight: "0.4rem solid #9ca3af"
+                borderRight: "0.4rem solid #9ca3af",
               }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background:"white",
+                background: "white",
                 fontSize: "1.5rem",
               }}
             >
@@ -51,7 +53,6 @@ function Experience() {
         ))}
       </VerticalTimeline>
     </section>
-
   );
 }
 

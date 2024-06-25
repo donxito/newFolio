@@ -16,7 +16,10 @@
     scroll-behavior: smooth;
 }
 
-
+.borderBlack {
+    @apply border border-black/10;
+  }
+  
 
 /* ---------------------------------------- */
 

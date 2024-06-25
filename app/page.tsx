@@ -5,13 +5,15 @@ import Divider from "@/components/divider";
 import About from "@/components/about";
 import {ConfettiComponentBottom, ConfettiComponentTop} from "@/components/confettiComponent";
 import Projects from "@/components/projects";
+import Skills from "@/components/skills";
+import Experience from "@/components/experience";
+import Contact from "@/components/contact"
 import Footer from "@/components/footer";
 
 
 import { useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import Skills from "@/components/skills";
-import Experience from "@/components/experience";
+
 
 
 export default function Home() {
@@ -66,7 +68,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Experience />
-        
+        <Contact />
         <Footer />
         <ConfettiComponentBottom />
         

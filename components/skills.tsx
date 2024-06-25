@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 function Skills() {
 
-    const { ref } = useSectionInView("Skills", 0.75)
+    const { ref } = useSectionInView("Skills", 0.5)
 
     const fadeInAnimationVariants = {
         initial: {
@@ -18,7 +18,7 @@ function Skills() {
             opacity: 1,
             y: 0,
             transition: {
-                delay: 0.4 * index,
+                delay: 0.3 * index,
             }
         })
     };
@@ -29,7 +29,7 @@ function Skills() {
         <SectionHeading>My Skills</SectionHeading>
         <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
             {skillsData.map((skill, index) => (
-                <motion.li className='bg-white border border-black/[0.1] rounded-xl px-5 py-3'
+                <motion.li className='bg-white borderBlack rounded-xl px-5 py-3'
                 key={index}
                 variants={fadeInAnimationVariants}
                 initial='initial'

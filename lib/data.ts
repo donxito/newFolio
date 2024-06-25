@@ -48,15 +48,25 @@ export const experiencesData = [
     // icon: <LuGraduationCap />,
     date: "2008",
   },
+  {
+    title: "Graphic Designer",
+    location: "Lisbon, Portugal",
+    description:
+      "Print and editorial design. Corporate Identity. Producing and pre-press final artwork.",
+    icon: React.createElement(SiMaterialdesign),
+    // icon: <SiMaterialdesign />,
+    date: "2008 - 2015",
+  },
 
   {
     title: "Graduated Chef School",
     location: "Lisbon, Portugal",
-    description: "Higher University Education, Food Production.",
+    description: "Higher Education, Food Production.",
     icon: React.createElement(LuGraduationCap),
     // icon: <LuGraduationCap />,
     date: "2016",
   },
+
   {
     title: "Chef",
     location:
@@ -68,12 +78,12 @@ export const experiencesData = [
     date: "2016 - 2019",
   },
   {
-    title: "Graphic Designer",
+    title: "Freelance Graphic Designer",
     location: "Lisbon, Portugal/ Remote",
     description:
       "Designed visually appealing graphics and layouts for various print and digital media. Focused on user experience and interface design, enhancing client satisfaction and engagement.",
     icon: React.createElement(SiMaterialdesign),
-    // icon: <SiAdobeindesign />,
+    // icon: <SiMaterialdesign />,
     date: "2009 - 2023",
   },
   {
@@ -85,10 +95,10 @@ export const experiencesData = [
     date: "2024",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Freelance Full-Stack Developer",
     location: "Copenhagen, Denmark/ Remote",
     description:
-      "I'm now a full-stack developer with a passion for innovation and creation, specializing in front-end development, working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Express and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer with a passion for innovation and creation, specializing in front-end development, working as a freelancer. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2024 - present",
   },
