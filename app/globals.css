@@ -47,7 +47,7 @@
 }
 
 .socialIcon-github {
-    top: 60%;
+    top: 70%;
     right: -80px;
     background: -webkit-linear-gradient(45deg, #fbfcdb 0%, #e9defa 100%);/* Opposite gradient */
 }
@@ -106,19 +106,20 @@ html {
 
 .custom-shape-divider-bottom-1718801133 {
   position: absolute;
-  bottom: -30%;
+  bottom: 0%;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  z-index: -1;
 }
 
 .custom-shape-divider-bottom-1718801133 svg {
   position: relative;
   display: block;
   width: calc(105% + 1.3px);
-  height: 150px;
+  height: 250px;
   transform: rotateY(180deg);
 }
 

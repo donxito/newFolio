@@ -23,8 +23,7 @@ function Hero() {
 
   // date & greeting
   let greeting = "";
-  const date = new Date();
-  let currentHour = date.getHours();
+  let currentHour = new Date().getHours();
   //console.log(currentHour)
 
   if (currentHour < 6) {

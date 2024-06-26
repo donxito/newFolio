@@ -6,7 +6,7 @@ export function ConfettiComponentBottom() {
     <div
       style={{
         position: "absolute",
-        bottom: "-30px",
+        bottom: "0%",
         left: "50%",
         transform: "translateX(-50%)",
         zIndex: "0",
@@ -45,7 +45,7 @@ export function ConfettiComponentTop() {
       <Confetti
         mode="fall"
         particleCount={100}
-        shapeSize={10}
+        shapeSize={12}
         colors={["#FF0000", "#FF6600", "#00FF00", "#FF00FF"]}
       />
     </div>
