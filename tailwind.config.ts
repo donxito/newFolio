@@ -18,5 +18,6 @@ const config: Config = {
   plugins: [
     require('@codaworks/react-glow/tailwind')
   ],
+  darkMode: "class",
 };
 export default config;

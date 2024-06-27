@@ -29,7 +29,7 @@ function Skills() {
         <SectionHeading>My Skills</SectionHeading>
         <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
             {skillsData.map((skill, index) => (
-                <motion.li className='bg-white borderBlack rounded-xl px-5 py-3'
+                <motion.li className='bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80'
                 key={index}
                 variants={fadeInAnimationVariants}
                 initial='initial'

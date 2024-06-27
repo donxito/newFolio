@@ -30,14 +30,14 @@ function Footer() {
       </div>
 
       <section className="mt-10 px-4 text-center text-gray-500">
-        <small className="mb-2 block text-xs">
+        <small className=" block text-xs font-semibold">
           &copy; {currentYear} Miguel Chito. All rigths reserved
         </small>
         <p className="text-xs pb-2">
-          <span className="font-semibold">About My Portfolio Website:</span>{" "}
+          {/* <span className="font-semibold">About My Portfolio Website:</span>{" "}
           built with Next.js & React, TypeScript, Tailwind CSS, Framer Motion,
           React Email & Resend, React Hot Toast, React Vertical TimeLine,
-          tsParticles, React Glow, hosting on Vercel.
+          tsParticles, React Glow, hosting on Vercel. */}
         </p>
       </section>
     </footer>

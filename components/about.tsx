@@ -22,7 +22,7 @@ function About() {
         <Glow color="yellow">
           <SectionHeading>About me</SectionHeading>
 
-          <p className="mb-3 text-black glow:text-glow/70 "><span className="text-xl">Hi there!</span><br/>
+          <p className="mb-3 glow:text-glow/70 "><span className="text-xl">Hi there!</span><br/>
           With <span className="font-semibold"> 10 years of experience in Graphic Design
             </span>{" "}
             and a background as a
@@ -33,10 +33,10 @@ function About() {
             <span className="font-semibold"> adaptive innovation</span>.
             </p>
 
-          <p className="mb-3 mt-8 text-black glow:text-glow/70">
+          <p className="mb-3 mt-8 glow:text-glow/70">
             <span className="font-semibold">What I Bring to the Table:</span>
           </p>
-          <ul className="mb-3 text-black glow:text-glow/70 list-disc list-inside">
+          <ul className="mb-3 glow:text-glow/70 list-disc list-inside">
             <li>
               <span className="font-semibold">Problem-Solving Prowess:</span>{" "}
               Sharpened by a spectrum of professional challenges.
@@ -49,12 +49,12 @@ function About() {
             </li>
           </ul>
 
-          <p className="mb-3 mt-8 text-black glow:text-glow/70">
+          <p className="mb-3 mt-8  glow:text-glow/70">
             <span className="font-semibold">
               Specializing in Full-Stack Development with the MERN Stack:
             </span>
           </p>
-          <ul className="mb-3 text-black glow:text-glow/70 list-disc list-inside">
+          <ul className="mb-3 glow:text-glow/70 list-disc list-inside">
             <li>
               <span className="font-semibold">Frontend technologies:</span>{" "}
               JavaScript (ES6), React, HTML, CSS, SaSS, Bootstrap, Tailwind
@@ -69,12 +69,12 @@ function About() {
             </li>
           </ul>
 
-          <p className="mb-3 text-black glow:text-glow/70">
+          <p className="mb-3  glow:text-glow/70">
             <span className="font-semibold">Expanding Horizons: </span>
             Currently leveling up with TypeScript and Next.js.
           </p>
 
-          <p className="mb-3 text-black glow:text-glow/70">
+          <p className="mb-3 glow:text-glow/70">
             Passionate about development and driven to excel, I’m on the lookout
             for a team where
             <span className="underline"> innovation meets impact</span>.

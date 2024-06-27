@@ -9,7 +9,7 @@ export function ConfettiComponentBottom() {
         bottom: "0%",
         left: "50%",
         transform: "translateX(-50%)",
-        zIndex: "0",
+        zIndex: "",
         width: "100%",
       }}
     >
@@ -33,6 +33,7 @@ export function ConfettiComponentBottom() {
 export function ConfettiComponentTop() {
   return (
     <div
+    className="invisible lg:visible lg:w-0"
       style={{
         position: "absolute",
         top: "0px",
@@ -43,8 +44,9 @@ export function ConfettiComponentTop() {
       }}
     >
       <Confetti
+      
         mode="fall"
-        particleCount={100}
+        particleCount={110}
         shapeSize={12}
         colors={["#FF0000", "#FF6600", "#00FF00", "#FF00FF"]}
       />

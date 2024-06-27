@@ -3,18 +3,16 @@
 import Hero from "../components/hero";
 import Divider from "@/components/divider";
 import About from "@/components/about";
-import {ConfettiComponentBottom, ConfettiComponentTop} from "@/components/confettiComponent";
+import { ConfettiComponentBottom, ConfettiComponentTop } from "@/components/confettiComponent";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
-import Contact from "@/components/contact"
-
-
+import Contact from "@/components/contact";
+import Fireworks from "@/components/Fireworks";
+import NewConfetti from "@/components/confetti";
 
 import { useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-
-
 
 export default function Home() {
   // timer for showing up "aba" social icons
@@ -28,7 +26,7 @@ export default function Home() {
         (socialIconGitHub as HTMLElement).style.opacity = "1";
         (socialIconGitHub as HTMLElement).style.pointerEvents = "auto"; // Enable interaction
       }
-    }, 5000); // 5 seconds delay
+    }, 4000); // 4 seconds delay
 
     return () => clearTimeout(timer); // Cleanup the timer on component unmount
   }, []);
@@ -40,10 +38,10 @@ export default function Home() {
           href="https://www.linkedin.com/in/miguelchito-reactdeveloper"
           target="_blank"
           rel="noopener noreferrer"
-          className="socialIconLink"
+          className="socialIconLink dark:bg-gray-700 dark:bg-opacity-90 dark:text-white/50"
         >
           <p>Linkedin</p>
-          <FaLinkedin className="text-3xl" />
+          <FaLinkedin className="text-3xl dark:text-white/50" />
         </a>
       </aside>
 
@@ -52,16 +50,16 @@ export default function Home() {
           href="https://github.com/donxito"
           target="_blank"
           rel="noopener noreferrer"
-          className="socialIconLink"
+          className="socialIconLink mr-3 dark:bg-gray-700 dark:bg-opacity-90 dark:text-white/50"
         >
-          <FaGithub className="text-3xl" />
+          <FaGithub className="text-3xl mr-3 dark:text-white/50" />
           <p>GitHub</p>
         </a>
       </aside>
 
-      <main className="flex flex-col items-center px-4">
-
-      <ConfettiComponentTop />
+      <main className="flex flex-col items-center px-4 ">
+        {/* <ConfettiComponentTop /> */}
+        <NewConfetti />
         <Hero />
         <Divider />
         <About />
@@ -69,8 +67,12 @@ export default function Home() {
         <Skills />
         <Experience />
         <Contact />
+
+        {/* <div className="particles-container">
+          <Fireworks />
+        </div> */}
+
         {/* <ConfettiComponentBottom /> */}
-        
       </main>
     </>
   );

@@ -5,21 +5,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    background: transparent;
-    box-sizing: border-box;
-    font-family: "Outfit", "Sarabun", sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Outfit", "Sarabun", sans-serif;
+  scroll-behavior: smooth;
 }
+
 
 .borderBlack {
     @apply border border-black/10;
-  }
-  
+}
+
+
 
 /* ---------------------------------------- */
 
@@ -31,8 +31,8 @@
     top: 50%;
     transform: translateY(-50%);
     width: 150px;
-    height: 60px;
-    border-radius: 8px;
+    height: 58px;
+    border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 0.3s ease, opacity 1s ease;
@@ -47,7 +47,7 @@
 }
 
 .socialIcon-github {
-    top: 70%;
+    top: 80%;
     right: -80px;
     background: -webkit-linear-gradient(45deg, #fbfcdb 0%, #e9defa 100%);/* Opposite gradient */
 }
@@ -98,8 +98,14 @@ h1 {
 /*  EXPERIENCES   */
 
 html {
-    --line-color: #e5e7eb
+    --line-color: #e5e7eb;
 }
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+  
 
 
 /*  FOOTER  */
@@ -128,6 +134,17 @@ html {
 }
 
 
+/*  FIREWORKS  */
+
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent !important;
+  z-index: -1;
+}
 
 
 /*  *****  */
