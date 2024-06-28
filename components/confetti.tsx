@@ -1,3 +1,5 @@
+//https://github.com/alampros/react-confetti
+
 import React from 'react'
 import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from 'react-confetti'
@@ -8,9 +10,12 @@ function NewConfetti() {
     return (
       <Confetti
         width={width}
-        height={height}
+        height={6000}
         numberOfPieces={20}
-        //colors={["#FF0000", "#FF6600", "#00FF00", "#FF00FF"]}
+        // wind={0.020}
+        // gravity={0.1}
+     
+
 
         
         

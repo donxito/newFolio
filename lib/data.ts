@@ -233,3 +233,5 @@ export const skillsData = [
   "PostgreSQL",
   "Postman",
 ] as const;
+
+

@@ -3,14 +3,11 @@
 import Hero from "../components/hero";
 import Divider from "@/components/divider";
 import About from "@/components/about";
-import { ConfettiComponentBottom, ConfettiComponentTop } from "@/components/confettiComponent";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
-import Fireworks from "@/components/Fireworks";
 import NewConfetti from "@/components/confetti";
-
 import { useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
@@ -58,7 +55,6 @@ export default function Home() {
       </aside>
 
       <main className="flex flex-col items-center px-4 ">
-        {/* <ConfettiComponentTop /> */}
         <NewConfetti />
         <Hero />
         <Divider />
@@ -67,12 +63,6 @@ export default function Home() {
         <Skills />
         <Experience />
         <Contact />
-
-        {/* <div className="particles-container">
-          <Fireworks />
-        </div> */}
-
-        {/* <ConfettiComponentBottom /> */}
       </main>
     </>
   );
