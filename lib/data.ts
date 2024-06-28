@@ -1,13 +1,27 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
+
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap, LuChefHat } from "react-icons/lu";
-import { SiMaterialdesign } from "react-icons/si";
+import { SiMaterialdesign, SiNextdotjs, SiPython, SiPostgresql } from "react-icons/si";
 import imgFounderFinder from "../public/founderfinder4.png";
 import imgTravelTips from "../public/traveltips1.png";
 import imgBookClub from "../public/bookclub3.png";
 import imgEventSlap from "../public/eventslap1.png";
 import imgPaperboy from "../public/paperboy2.png";
+import { IoLogoJavascript } from "react-icons/io";
+import { FaCss3Alt } from "react-icons/fa";
+import { SiTailwindcss, SiPrisma } from "react-icons/si";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import { FaSass } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { BiLogoMongodb } from "react-icons/bi";
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiAdobeillustrator } from "react-icons/si";
+import { SiAdobeindesign } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
 
 export const links = [
   {
@@ -235,3 +249,25 @@ export const skillsData = [
 ] as const;
 
 
+export const skillsIcon = [
+  React.createElement(FaReact),
+  React.createElement(SiNextdotjs),
+  React.createElement(AiOutlineHtml5),
+  React.createElement(FaCss3Alt),
+  React.createElement(IoLogoJavascript),
+  React.createElement(SiTypescript),
+  React.createElement(FaNodeJs),
+  React.createElement(SiExpress),
+  React.createElement(BiLogoMongodb),
+  React.createElement(SiPostman),
+  React.createElement(FaSass),
+  React.createElement(SiTailwindcss),
+  React.createElement(SiPrisma),
+  React.createElement(SiPostgresql),
+  React.createElement(FaGitAlt),
+  React.createElement(SiPython),
+  React.createElement(SiAdobephotoshop),
+  React.createElement(SiAdobeillustrator),
+  React.createElement(SiAdobeindesign),
+
+] as const

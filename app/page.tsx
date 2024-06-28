@@ -35,10 +35,10 @@ export default function Home() {
           href="https://www.linkedin.com/in/miguelchito-reactdeveloper"
           target="_blank"
           rel="noopener noreferrer"
-          className="socialIconLink dark:bg-gray-700 dark:bg-opacity-90 dark:text-white/50"
+          className="socialIconLink opacity-70 dark:bg-[#596164] dark:bg-opacity-90 dark:text-white/60"
         >
-          <p>Linkedin</p>
-          <FaLinkedin className="text-3xl dark:text-white/50" />
+          <p className="dark:text-white/40">Linkedin</p>
+          <FaLinkedin className="text-3xl dark:text-white/60" />
         </a>
       </aside>
 
@@ -47,15 +47,18 @@ export default function Home() {
           href="https://github.com/donxito"
           target="_blank"
           rel="noopener noreferrer"
-          className="socialIconLink mr-3 dark:bg-gray-700 dark:bg-opacity-90 dark:text-white/50"
+          className="socialIconLink mr-3 opacity-70 dark:bg-[#596164] dark:bg-opacity-90 dark:text-white/60"
         >
-          <FaGithub className="text-3xl mr-3 dark:text-white/50" />
-          <p>GitHub</p>
+          <FaGithub className="text-3xl mr-3 dark:text-white/60" />
+          <p className="dark:text-white/40">GitHub</p>
         </a>
       </aside>
 
       <main className="flex flex-col items-center px-4 ">
+        <div className="sm:visible">
         <NewConfetti />
+        </div>
+       
         <Hero />
         <Divider />
         <About />

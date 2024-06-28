@@ -11,14 +11,10 @@ function NewConfetti() {
       <Confetti
         width={width}
         height={6000}
-        numberOfPieces={20}
+        numberOfPieces={30}
+        colors={['#f44336','#e91e63','#9c27b0','#4CAF50','#8BC34A','#CDDC39','#FFEB3B','#FFC107','#FF9800','#FF5722','#795548']}
         // wind={0.020}
         // gravity={0.1}
-     
-
-
-        
-        
       />
     )
   }

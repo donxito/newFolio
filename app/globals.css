@@ -33,7 +33,7 @@
     width: 150px;
     height: 58px;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     transition: all 0.3s ease, opacity 1s ease;
     z-index: 10;
@@ -43,13 +43,13 @@
 
 .socialIcon-linkedin {
     left: -80px;
-    background: -webkit-linear-gradient(-45deg, #fbfcdb 0%, #e9defa 100%);
+    background: -webkit-linear-gradient(-45deg, #97d9e1 0%, #e4efe9 100%);
 }
 
 .socialIcon-github {
     top: 80%;
     right: -80px;
-    background: -webkit-linear-gradient(45deg, #fbfcdb 0%, #e9defa 100%);/* Opposite gradient */
+    background: -webkit-linear-gradient(45deg, #97d9e1 0%, #e4efe9 100%);/* Opposite gradient */
 }
 
 .socialIcon-linkedin:hover {
@@ -66,7 +66,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    color: #abaaaa;
+    color: #545454;
     text-decoration: none;
     font-size: 1rem;
     padding-right: 20px;
@@ -74,7 +74,7 @@
 }
 
 .socialIconLink p {
-    color: #abaaaa;
+    color: #545454;
 }
 
 @media (max-width: 576px) {
