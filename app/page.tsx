@@ -55,10 +55,7 @@ export default function Home() {
       </aside>
 
       <main className="flex flex-col items-center px-4 ">
-        <div className="sm:visible">
         <NewConfetti />
-        </div>
-       
         <Hero />
         <Divider />
         <About />
