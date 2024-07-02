@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 
 
 function Contact() {
-  const { ref } = useSectionInView("Contact", 0.5);
+  const { ref } = useSectionInView("Contact", 1);
 
   // const [isLoading, setIsLoading] = useState(false);
   // const [message, setMessage] = useState("");

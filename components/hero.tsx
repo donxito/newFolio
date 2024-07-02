@@ -74,10 +74,10 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
           >
             {greeting},<span className="font-bold"> I'm Miguel!</span> A{" "}
-            <span className="font-bold">Full Stack Developer</span> with a solid
-            background in <span className="underline">Graphic Design.</span> I'm
-            fascinated by web applications and focus on building them with{" "}
+            <span className="font-bold">Full Stack Developer</span> with focus on <span className=" italic"> front-end development. </span><br/>
+            <br/>With a solid  background in <span className="underline">Graphic Design,</span> I'm fascinated by web applications and focus on building them with{" "}
             <span className="font-bold">React.</span>
+            
           </motion.h1>
         </Glow>
       </GlowCapture>

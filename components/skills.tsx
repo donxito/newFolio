@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 function Skills() {
 
-    const { ref } = useSectionInView("Skills", 0.5)
+    const { ref } = useSectionInView("Skills", 1)
 
     const fadeInAnimationVariants = {
         initial: {

@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/activeSectionContext";
 import { SectionName } from "./types";
 
-export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
+export function useSectionInView(sectionName: SectionName, threshold = 0.5) {
 
 
   const { ref, inView } = useInView({

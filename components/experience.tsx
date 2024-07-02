@@ -13,7 +13,7 @@ import { useTheme } from "@/context/themeContext";
 
 function Experience() {
 
-  const { ref } = useSectionInView("Experience", 0.75);
+  const { ref } = useSectionInView("Experience");
 
   const { theme } = useTheme();
 
