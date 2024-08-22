@@ -6,7 +6,7 @@ import { SiMaterialdesign, SiNextdotjs, SiPython, SiPostgresql } from "react-ico
 import imgFounderFinder from "../public/founderfinder4.png";
 import imgTravelTips from "../public/traveltips1.png";
 import imgBookClub from "../public/bookclub3.png";
-import imgEventSlap from "../public/eventslap1.png";
+import imgEventSlap from "../public/eventslap1.png"; 
 import imgPaperboy from "../public/paperboy2.png";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaCss3Alt } from "react-icons/fa";
@@ -116,6 +116,15 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "2024 - present",
   },
+  {
+    title: "Frontend Developer",
+    location: "Copenhagen, Denmark",
+    description:
+      "Developed and implemented the front-end of an AI-powered Project Management Assistant, including chat interfaces, tools, and templates. Integrated emerging web technologies and AI features into the project, focusing on improving user experience and functionality.",
+    icon: React.createElement(FaReact),
+    date: "2024 - present",
+  },
+
 ] as const;
 
 
