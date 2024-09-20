@@ -8,6 +8,7 @@ import imgTravelTips from "../public/traveltips1.png";
 import imgBookClub from "../public/bookclub3.png";
 import imgEventSlap from "../public/eventslap1.png";
 import imgPaperboy from "../public/paperboy2.png";
+import imgNextBite from "../public/recipeapi.png"
 import { IoLogoJavascript } from "react-icons/io";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiTailwindcss, SiPrisma } from "react-icons/si";
@@ -123,6 +124,27 @@ export const experiencesData = [
 export const projectsData = [
   {
     id: 1,
+    title: "NextBite",
+    description:
+      "NextBite is a modern web application designed to help users discover delicious recipes based on the ingredients they have at home.",
+    summary:
+      "NextBite is a modern web application designed to help users discover delicious recipes based on the ingredients they have at home. This project showcases full-stack development skills, combining a robust backend with a sleek, responsive frontend.",
+    skills: [
+      "React",
+      "Next.js",
+      "Supabase",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion ",
+    ],
+    image:
+      "https://res.cloudinary.com/dq08sfqpa/image/upload/v1726838976/event-slap/a0robqbdg4vjyjlq2z5b.png",
+    demo: "https://nextbite-black.vercel.app",
+    repo: "https://github.com/donxito/recipe-generator",
+    imgUrl: imgNextBite,
+  },
+  {
+    id: 2,
     title: "FounderFinder",
     description:
       "Founder Finder is a Fullstack web application where users can search for potential co-founders based on various criteria. Profile Management and user Authentication",
@@ -146,7 +168,7 @@ export const projectsData = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Mini Book Club",
     description:
       "A gift for my wife and her book reading club. Mini Book Club is a place where you can share notes of your favourite books and also ratings.",
@@ -169,7 +191,7 @@ export const projectsData = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "EventSlap",
     description:
       "Full-stack application implementing all CRUD actions, using the MERN stack. Backend REST API built with Express, MongoDB, and Mongoose.",
@@ -192,7 +214,7 @@ export const projectsData = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "TravelTips",
     description:
       "This project has been created as a Single Page Application (SPA) using React. Integrated with an external API, the React application allows users to perform CRUD operations.",
@@ -207,7 +229,7 @@ export const projectsData = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Paperboy",
     description: "Small remake of the 80's legendary paperboy arcade game.",
     summary:
