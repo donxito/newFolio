@@ -148,7 +148,7 @@ export const projectsData = [
     ],
     image:
       "https://res.cloudinary.com/dq08sfqpa/image/upload/v1726838976/event-slap/a0robqbdg4vjyjlq2z5b.png",
-    demo: "https://nextbite-black.vercel.app",
+    demo: "https://next-bite.vercel.app",
     repo: "https://github.com/donxito/recipe-generator",
     imgUrl: imgNextBite,
   },
