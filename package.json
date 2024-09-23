@@ -25,7 +25,8 @@
     "react-use": "^17.5.0",
     "react-vertical-timeline-component": "^3.6.0",
     "resend": "^3.3.0",
-    "tsparticles": "^3.4.0"
+    "tsparticles": "^3.4.0",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/node": "^20",

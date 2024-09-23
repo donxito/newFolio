@@ -2,7 +2,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import foto from "@/public/foto.png";
 //import cv from "@/public/Miguel_Chito_CV";
 import { motion } from "framer-motion";
@@ -15,26 +15,21 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/activeSectionContext";
 
 
+
 function Hero() {
 
    const { ref } = useSectionInView("Home", 0.5)
 
   const { setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
 
-  // date & greeting
-  let greeting = "";
-  let currentHour = new Date().getHours();
-  //console.log(currentHour)
-
-  if (currentHour < 6) {
-    greeting = "Good night";
-  } else if (currentHour < 12) {
-    greeting = "Good morning";
-  } else if (currentHour < 19) {
-    greeting = "Good afternoon";
-  } else {
-    greeting = "Good evening";
-  }
+  // Greeting based on the time of day
+  const greeting = useMemo(() => {
+    const hour = new Date().getHours();
+    if (hour < 12) return "Good morning"
+    if (hour < 18) return "Good afternoon"
+    return "Good evening"
+  }, [])
+  
 
   return (
     <section
@@ -73,12 +68,12 @@ function Hero() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            {greeting},<span className="font-bold"> I'm Miguel!</span> A{" "}
-            <span className="font-bold">Full Stack Developer</span> with focus on <span className=" italic"> front-end development. </span><br/>
-            <br/>With a solid  background in <span className="underline">Graphic Design,</span> I'm fascinated by web applications and focus on building them with{" "}
-            <span className="font-bold">React.</span>
-            
-          </motion.h1>
+            <span className="font-bold">{greeting}, I'm Miguel!</span> A{" "}
+              <span className="font-bold">Full Stack Developer</span> with a passion for{" "}
+              <span className="italic">front-end magic.</span><br/>
+              <br/>Blending <span className="underline">Graphic Design expertise</span> with code,
+              I craft <span className="font-bold">React-powered</span> web wonders.
+            </motion.h1>
         </Glow>
       </GlowCapture>
 
