@@ -156,7 +156,7 @@ export const projectsData = [
     id: 2,
     title: "FounderFinder",
     description:
-      "Founder Finder is a Fullstack web application where users can search for potential co-founders based on various criteria. Profile Management and user Authentication",
+      "Founder Finder is a Fullstack web application where users can search for potential co-founders based on various criteria.",
     summary:
       "Finding a co-founder is hard, we provide you with the platform to make that easier. Building a start-up is hard work. It is a journey to create something new and it takes believing in a dream each and every day, often against all odds.",
     skills: [

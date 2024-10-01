@@ -6,15 +6,15 @@ import Confetti from 'react-confetti'
 
 function NewConfetti() {
     // Get window size on first render
-    const { width, height } = useWindowSize()
+    //const { width, height } = useWindowSize()
     return (
       <Confetti
-        width={width}
+        width={2000}
         height={6000}
-        numberOfPieces={30}
+        numberOfPieces={100}
         colors={['#f44336','#e91e63','#9c27b0','#4CAF50','#8BC34A','#CDDC39','#FFEB3B','#FFC107','#FF9800','#FF5722','#795548']}
-        // wind={0.020}
-        // gravity={0.1}
+        wind={0.01}
+        gravity={0.05}
       />
     )
   }
