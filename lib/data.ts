@@ -222,23 +222,23 @@ export const projectsData = [
     imgUrl: imgEventSlap,
   },
 
-  {
-    id: 5,
-    title: "TravelTips",
-    description:
-      "This project has been created as a Single Page Application (SPA) using React. Integrated with an external API, the React application allows users to perform CRUD operations.",
-    summary:
-      "This project has been created as a Single Page Application (SPA) using React. The application consists of multiple views, providing a user-friendly interface for exploring and sharing travel advice. Integrated with an external API, the React application allows users to perform CRUD operations (Create, Read, Update, Delete) on travel-related content.",
-    skills: ["React", "React-Router", "Axios", "Tailwind"],
-    image:
-      "https://res.cloudinary.com/dq08sfqpa/image/upload/v1712179182/event-slap/qjsh8yzo6mvoxyc78a3j.png",
-    demo: "https://toptraveltips.netlify.app",
-    repo: "https://github.com/mig-max/travel-tips",
-    imgUrl: imgTravelTips,
-  },
+  // {
+  //   id: 5,
+  //   title: "TravelTips",
+  //   description:
+  //     "This project has been created as a Single Page Application (SPA) using React. Integrated with an external API, the React application allows users to perform CRUD operations.",
+  //   summary:
+  //     "This project has been created as a Single Page Application (SPA) using React. The application consists of multiple views, providing a user-friendly interface for exploring and sharing travel advice. Integrated with an external API, the React application allows users to perform CRUD operations (Create, Read, Update, Delete) on travel-related content.",
+  //   skills: ["React", "React-Router", "Axios", "Tailwind"],
+  //   image:
+  //     "https://res.cloudinary.com/dq08sfqpa/image/upload/v1712179182/event-slap/qjsh8yzo6mvoxyc78a3j.png",
+  //   demo: "https://toptraveltips.netlify.app",
+  //   repo: "https://github.com/mig-max/travel-tips",
+  //   imgUrl: imgTravelTips,
+  // },
 
   {
-    id: 6,
+    id: 5,
     title: "Paperboy",
     description: "Small remake of the 80's legendary paperboy arcade game.",
     summary:
