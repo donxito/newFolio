@@ -56,78 +56,94 @@ export const links = [
 
 export const experiencesData = [
   {
+    section: "Education",
     title: "Graduated Design University",
     location: "Lisbon, Portugal",
     description: "Higher University Education, Graphic and Editorial Design.",
     icon: React.createElement(LuGraduationCap),
-    // icon: <LuGraduationCap />,
     date: "2008",
   },
   {
+    section: "Work Experience",
     title: "Graphic Designer",
     location: "Lisbon, Portugal",
-    description:
-      "Print and editorial design. Corporate Identity. Producing and pre-press final artwork.",
+    description: `
+      Print and editorial design.
+      Corporate Identity.
+      Producing and pre-press final artwork.
+    `,
     icon: React.createElement(SiMaterialdesign),
-    // icon: <SiMaterialdesign />,
     date: "2008 - 2015",
   },
-
   {
+    section: "Education",
     title: "Graduated Chef School",
     location: "Lisbon, Portugal",
     description: "Higher Education, Food Production.",
     icon: React.createElement(LuGraduationCap),
-    // icon: <LuGraduationCap />,
     date: "2016",
   },
-
   {
+    section: "Work Experience",
     title: "Chef",
-    location:
-      "Southeast Asia (India, Thailand, Laos, Cambodia, Vietnam, Indonesia)",
-    description:
-      "Adventure of 3 years working as a Chef around Southeast Asia. Cultivated a strong sense of creativity and adaptability, essential for innovative problem-solving in technology’s",
+    location: "Southeast Asia (India, Thailand, Laos, Cambodia, Vietnam, Indonesia)",
+    description: `
+      - Worked as a chef across Southeast Asia for 3 years.
+      - Cultivated creativity and adaptability for innovative problem-solving.
+    `,
     icon: React.createElement(LuChefHat),
-    // icon: <LuChefHat />,
     date: "2016 - 2019",
   },
   {
+    section: "Work Experience",
     title: "Freelance Graphic Designer",
-    location: "Lisbon, Portugal/ Remote",
-    description:
-      "Designed visually appealing graphics and layouts for various print and digital media. Focused on user experience and interface design, enhancing client satisfaction and engagement.",
+    location: "Lisbon, Portugal / Remote",
+    description: `
+    <br />
+      - Designed graphics and layouts for print and digital media.<br />
+      - Focused on user experience and interface design.
+    `,
     icon: React.createElement(SiMaterialdesign),
-    // icon: <SiMaterialdesign />,
     date: "2009 - 2023",
   },
   {
+    section: "Education",
     title: "Graduated from immersive Bootcamp",
     location: "Remote",
-    description:
-      "Recent graduate of Ironhack’s intensive Web Development Bootcamp. Built and deployed web apps based on MERN stack connected to REST API",
+    description: `
+    <br />
+      - Completed intensive Web Development Bootcamp at Ironhack.<br />
+      - Built web apps using the MERN stack connected to REST APIs.<br />
+    `,
     icon: React.createElement(LuGraduationCap),
     date: "2024",
   },
   {
+    section: "Work Experience",
     title: "Freelance Full-Stack Developer",
-    location: "Copenhagen, Denmark/ Remote",
-    description:
-      "Designed and developed web applications using the MERN stack. Implemented REST APIs and enhanced user interfaces. Focused on user experience and interface design, ensuring responsive and visually appealing layouts.",
+    location: "Copenhagen, Denmark / Remote",
+    description: `
+    <br />
+      - Designed and developed web applications using the MERN stack.<br />
+      - Implemented REST APIs and enhanced user interfaces.<br />
+      - Focused on responsive layouts and user experience.<br />
+    `,
     icon: React.createElement(FaReact),
     date: "2024 - present",
   },
   {
+    section: "Work Experience",
     title: "Frontend Developer",
-    location: "Copenhagen, Denmark",
-    description:
-      "Developed and implemented the front-end of an AI-powered Project Management Assistant, including chat interfaces, tools, and templates. Integrated emerging web technologies and AI features into the project, focusing on improving user experience and functionality.",
+    location: "Mesh Firm, Copenhagen, Denmark",
+    description: `
+    <br />
+      - Developed the front-end of an AI-powered Project Management Assistant.<br />
+      - Integrated AI features to improve functionality and user experience.<br />
+    `,
     icon: React.createElement(FaReact),
     date: "2024 - present",
   },
-
 ] as const;
-
 
 
 export const projectsData = [
