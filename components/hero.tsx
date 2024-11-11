@@ -14,22 +14,18 @@ import { GlowCapture, Glow } from "@codaworks/react-glow";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/activeSectionContext";
 
-
-
 function Hero() {
+  const { ref } = useSectionInView("Home", 0.5);
 
-   const { ref } = useSectionInView("Home", 0.5)
-
-  const { setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   // Greeting based on the time of day
   const greeting = useMemo(() => {
     const hour = new Date().getHours();
-    if (hour < 12) return "Good morning"
-    if (hour < 18) return "Good afternoon"
-    return "Good evening"
-  }, [])
-  
+    if (hour < 12) return "Good morning";
+    if (hour < 18) return "Good afternoon";
+    return "Good evening";
+  }, []);
 
   return (
     <section
@@ -69,11 +65,16 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
           >
             <span className="font-bold">{greeting}, I'm Miguel!</span> A{" "}
-              <span className="font-bold">Full Stack Developer</span> with a passion for{" "}
-              <span className="italic">front-end magic.</span><br/>
-              <br/>Blending <span className="underline">Graphic Design expertise</span> with code,
-              I craft <span className="font-bold">React-powered</span> web wonders.
-            </motion.h1>
+            <span className="font-bold">Full Stack Developer</span> with a
+            passion for <span className="italic">front-end magic.</span>
+            <br />
+            <br />
+            Blending <span className="underline">
+              Graphic Design expertise
+            </span>{" "}
+            with code, I craft <span className="font-bold">React-powered</span>{" "}
+            web wonders.
+          </motion.h1>
         </Glow>
       </GlowCapture>
 
@@ -88,10 +89,8 @@ function Hero() {
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outine-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
-            setTimeOfLastClick(Date.now())
+            setTimeOfLastClick(Date.now());
           }}
-            
-          
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />

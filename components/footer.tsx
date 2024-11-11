@@ -31,7 +31,7 @@ function Footer() {
 
       <section className="mt-10 px-4 text-center text-gray-500">
         <small className=" block text-xs font-semibold">
-          &copy; {currentYear} Miguel Chito. All rigths reserved
+          &copy; {currentYear} Miguel Chito. All rights reserved.
         </small>
         <p className="text-xs pb-2">
           {/* <span className="font-semibold">About My Portfolio Website:</span>{" "}

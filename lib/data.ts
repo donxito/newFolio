@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap, LuChefHat } from "react-icons/lu";
 import { SiMaterialdesign, SiNextdotjs, SiPython, SiPostgresql } from "react-icons/si";
 import imgFounderFinder from "../public/founderfinder4.png";
-import imgTravelTips from "../public/traveltips1.png";
+//import imgTravelTips from "../public/traveltips1.png";
 import imgBookClub from "../public/bookclub3.png";
 import imgEventSlap from "../public/eventslap1.png"; 
 import imgPaperboy from "../public/paperboy2.png";
@@ -68,9 +68,9 @@ export const experiencesData = [
     title: "Graphic Designer",
     location: "Lisbon, Portugal",
     description: `
-      Print and editorial design.
-      Corporate Identity.
-      Producing and pre-press final artwork.
+    - Print and editorial design.<br />
+      - Corporate Identity.<br />
+      - Producing and pre-press final artwork.<br />
     `,
     icon: React.createElement(SiMaterialdesign),
     date: "2008 - 2015",
@@ -88,8 +88,8 @@ export const experiencesData = [
     title: "Chef",
     location: "Southeast Asia (India, Thailand, Laos, Cambodia, Vietnam, Indonesia)",
     description: `
-      - Worked as a chef across Southeast Asia for 3 years.
-      - Cultivated creativity and adaptability for innovative problem-solving.
+      - Worked as a chef across Southeast Asia for 3 years.<br />
+      - Cultivated creativity and adaptability for innovative problem-solving.<br />
     `,
     icon: React.createElement(LuChefHat),
     date: "2016 - 2019",
@@ -99,9 +99,8 @@ export const experiencesData = [
     title: "Freelance Graphic Designer",
     location: "Lisbon, Portugal / Remote",
     description: `
-    <br />
-      - Designed graphics and layouts for print and digital media.<br />
-      - Focused on user experience and interface design.
+        - Designed graphics and layouts for print and digital media.<br />
+      - Focused on user experience and interface design.<br />
     `,
     icon: React.createElement(SiMaterialdesign),
     date: "2009 - 2023",
@@ -111,7 +110,6 @@ export const experiencesData = [
     title: "Graduated from immersive Bootcamp",
     location: "Remote",
     description: `
-    <br />
       - Completed intensive Web Development Bootcamp at Ironhack.<br />
       - Built web apps using the MERN stack connected to REST APIs.<br />
     `,
@@ -123,7 +121,6 @@ export const experiencesData = [
     title: "Freelance Full-Stack Developer",
     location: "Copenhagen, Denmark / Remote",
     description: `
-    <br />
       - Designed and developed web applications using the MERN stack.<br />
       - Implemented REST APIs and enhanced user interfaces.<br />
       - Focused on responsive layouts and user experience.<br />
@@ -143,6 +140,19 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "2024 - present",
   },
+  {
+    section: "Work Experience",
+    title: "Frontend Developer Intern",
+    location: "Camp86, Copenhagen, Denmark",
+    description: `
+      - Collaborated on the development of Qliks, an innovative email platform.<br />
+      - Leveraged Next.js to enhance user experience and front-end performance.<br />
+      - Worked closely with product and development teams to design intuitive UI.<br />
+    `,
+    icon: React.createElement(SiNextdotjs),
+    date: "2024 - present",
+  },
+
 ] as const;
 
 
@@ -151,7 +161,7 @@ export const projectsData = [
     id: 1,
     title: "NextBite",
     description:
-      "NextBite is a modern web application designed to help users discover delicious recipes based on the ingredients they have at home.",
+      "Discover recipes with the ingredients you have. This full-stack project showcases advanced TypeScript integration with a sleek, user-centric UI built using Next.js and Tailwind CSS.",
     summary:
       "NextBite is a modern web application designed to help users discover delicious recipes based on the ingredients they have at home. This project showcases full-stack development skills, combining a robust backend with a sleek, responsive frontend.",
     skills: [

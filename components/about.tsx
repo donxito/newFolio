@@ -6,8 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 function About() {
-
-  const { ref } = useSectionInView("About", 0.5)
+  const { ref } = useSectionInView("About", 0.5);
 
   return (
     <motion.section
@@ -22,16 +21,21 @@ function About() {
         <Glow color="yellow">
           <SectionHeading>About me</SectionHeading>
 
-          <p className="mb-3 glow:text-glow/70 "><span className="text-xl">Hi there!</span><br/>
-          With <span className="font-semibold"> 10 years of experience in Graphic Design
+          <p className="mb-3 glow:text-glow/70">
+            <span className="text-xl">Hi there!</span>
+            <br />
+            With{" "}
+            <span className="font-semibold">
+              10 years of experience in Graphic Design
             </span>{" "}
-            and a background as a
-            <span className="italic"> Chef in Southeast Asia</span>. My journey
-            has been anything but ordinary, shaping me into a developer with a
-            talent for
-            <span className="underline"> creative problem-solving</span> and
+            and a unique background as a
+            <span className="italic"> Chef in Southeast Asia</span>, my journey
+            has been anything but ordinary. It has shaped me into a developer
+            with a knack for
+            <span className="underline"> creative problem-solving</span> and a
+            flair for
             <span className="font-semibold"> adaptive innovation</span>.
-            </p>
+          </p>
 
           <p className="mb-3 mt-8 glow:text-glow/70">
             <span className="font-semibold">What I Bring to the Table:</span>
@@ -39,17 +43,18 @@ function About() {
           <ul className="mb-3 glow:text-glow/70 list-disc list-inside">
             <li>
               <span className="font-semibold">Problem-Solving Prowess:</span>{" "}
-              Sharpened by a spectrum of professional challenges.
+              Honed through diverse professional challenges, both technical and
+              creative.
             </li>
             <li>
               <span className="font-semibold">
                 Adaptability and Quick Learning:
               </span>{" "}
-              A constant in my ever-changing career landscape.
+              A hallmark of my ever-evolving career journey.
             </li>
           </ul>
 
-          <p className="mb-3 mt-8  glow:text-glow/70">
+          <p className="mb-3 mt-8 glow:text-glow/70">
             <span className="font-semibold">
               Specializing in Full-Stack Development with the MERN Stack:
             </span>
@@ -57,11 +62,13 @@ function About() {
           <ul className="mb-3 glow:text-glow/70 list-disc list-inside">
             <li>
               <span className="font-semibold">Frontend technologies:</span>{" "}
-              JavaScript (ES6), React, HTML, CSS, SaSS, Bootstrap, Tailwind
+              JavaScript (ES6), TypeScript, React, Next.js, HTML, CSS, SaSS,
+              Bootstrap, Tailwind.
             </li>
             <li>
               <span className="font-semibold">Backend technologies:</span>{" "}
-              Express, Node.js, MongoDB, REST APIs, Mongoose
+              Express, Node.js, MongoDB, REST APIs, Mongoose, Prisma, Firebase,
+              Supabase.
             </li>
             <li>
               <span className="font-semibold">Version control:</span> GitHub &
@@ -69,14 +76,14 @@ function About() {
             </li>
           </ul>
 
-          <p className="mb-3  glow:text-glow/70">
-            <span className="font-semibold">Expanding Horizons: </span>
-            Currently leveling up with TypeScript and Next.js.
+          <p className="mb-3 glow:text-glow/70">
+            <span className="font-semibold">Expanding Horizons:</span> Currently
+            enhancing my expertise with TypeScript and Next.js.
           </p>
 
           <p className="mb-3 glow:text-glow/70">
-            Passionate about development and driven to excel, I’m on the lookout
-            for a team where
+            Passionate about development and committed to growth, I’m seeking a
+            team where
             <span className="underline"> innovation meets impact</span>.
           </p>
         </Glow>
