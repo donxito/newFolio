@@ -68,9 +68,10 @@ export const experiencesData = [
     title: "Graphic Designer",
     location: "Lisbon, Portugal",
     description: `
-    - Print and editorial design.<br />
-      - Corporate Identity.<br />
-      - Producing and pre-press final artwork.<br />
+    <br />
+    - Print and editorial design. <br />
+      - Corporate Identity. <br />
+      - Producing and pre-press final artwork. <br />
     `,
     icon: React.createElement(SiMaterialdesign),
     date: "2008 - 2015",
@@ -88,8 +89,8 @@ export const experiencesData = [
     title: "Chef",
     location: "Southeast Asia (India, Thailand, Laos, Cambodia, Vietnam, Indonesia)",
     description: `
-      - Worked as a chef across Southeast Asia for 3 years.<br />
-      - Cultivated creativity and adaptability for innovative problem-solving.<br />
+      - Worked as a chef across Southeast Asia for 3 years.
+      - Cultivated creativity and adaptability for innovative problem-solving.
     `,
     icon: React.createElement(LuChefHat),
     date: "2016 - 2019",
@@ -99,6 +100,7 @@ export const experiencesData = [
     title: "Freelance Graphic Designer",
     location: "Lisbon, Portugal / Remote",
     description: `
+    <br />
         - Designed graphics and layouts for print and digital media.<br />
       - Focused on user experience and interface design.<br />
     `,
@@ -110,6 +112,7 @@ export const experiencesData = [
     title: "Graduated from immersive Bootcamp",
     location: "Remote",
     description: `
+    <br />
       - Completed intensive Web Development Bootcamp at Ironhack.<br />
       - Built web apps using the MERN stack connected to REST APIs.<br />
     `,
@@ -121,6 +124,7 @@ export const experiencesData = [
     title: "Freelance Full-Stack Developer",
     location: "Copenhagen, Denmark / Remote",
     description: `
+    <br />
       - Designed and developed web applications using the MERN stack.<br />
       - Implemented REST APIs and enhanced user interfaces.<br />
       - Focused on responsive layouts and user experience.<br />
@@ -145,6 +149,7 @@ export const experiencesData = [
     title: "Frontend Developer Intern",
     location: "Camp86, Copenhagen, Denmark",
     description: `
+    <br />
       - Collaborated on the development of Qliks, an innovative email platform.<br />
       - Leveraged Next.js to enhance user experience and front-end performance.<br />
       - Worked closely with product and development teams to design intuitive UI.<br />
